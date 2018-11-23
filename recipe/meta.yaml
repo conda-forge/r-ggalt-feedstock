@@ -15,9 +15,9 @@ source:
   sha256: ec4ad778d15895d199b843d0ce7b8dd23ebe3e96e7cb9f99697007d2c8114a6b
 
 build:
-  number: 0
+  noarch: generic
+  number: 1000
   # r-extrafont not available for windows
-  skip: true  # [win]
 
   rpaths:
     - lib/R/lib/
