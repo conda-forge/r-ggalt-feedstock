@@ -16,7 +16,7 @@ source:
 
 build:
   noarch: generic
-  number: 1000
+  number: 0
   # r-extrafont not available for windows
 
   rpaths:
@@ -73,6 +73,7 @@ about:
     lollipop charts, dumbbell charts, the ability to encircle points and coordinate-system-based
     text annotations.
   license_family: AGPL
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/AGPL-3'
 
 extra:
   recipe-maintainers:
