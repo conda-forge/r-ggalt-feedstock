@@ -5,11 +5,9 @@ Home: https://github.com/hrbrmstr/ggalt
 
 Package license: AGPL
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ggalt-feedstock/blob/master/LICENSE.txt)
 
 Summary: A compendium of new geometries, coordinate systems, statistical  transformations, scales and fonts for 'ggplot2', including splines, 1d and 2d densities,  univariate average shifted histograms, a new map coordinate system based on the  'PROJ.4'-library along with geom_cartogram() that mimics the original functionality of  geom_map(), formatters for "bytes", a stat_stepribbon() function, increased 'plotly' compatibility and the 'StateFace' open source font 'ProPublica'. Further new  functionality includes lollipop charts, dumbbell charts, the ability to encircle points and coordinate-system-based text annotations.
-
-
 
 Current build status
 ====================
@@ -38,6 +36,7 @@ Installing `r-ggalt` from the `conda-forge` channel can be achieved by adding `c
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `r-ggalt` can be installed with:
@@ -108,9 +107,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
